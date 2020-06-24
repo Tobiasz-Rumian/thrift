@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id "org.jruyi.thrift" version "0.4.1"
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    enabled = true
+}
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.7'
+    compile group: 'org.apache.thrift', name: 'libthrift', version: '0.13.0'
+}
